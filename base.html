@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="JosePerdomo" />
-    <meta name="keywords" content="venta y diseño de muebles para hogar" />
-    <title>Tienda Muebles</title>
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plantilla Base | Tienda Muebles Studio</title>
+  <meta name="author" content="Jose Manuel Perdomo" />
+  <meta name="theme-color" content="#b85335" />
 
-  <body>
-    <header>
-      <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
-    </header>
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
-    <div class="contenedor-navegacion">
-      <nav class="nav-principal contenedor">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contacto.html">Contacto</a>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css?v=3.0.0" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3.0.0" />
+</head>
+<body>
+
+  <!-- Site Sticky Header -->
+  <header class="site-header">
+    <div class="contenedor header-container">
+      <a href="index.html" class="brand-logo">
+        <h1 class="brand-title">Tienda <span>Muebles</span></h1>
+        <span class="brand-subtitle">Studio &bull; Mobiliario de Autor</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="tienda.html" class="nav-link">Tienda</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
       </nav>
-    </div>
 
-    
-
-    <main class="contenido-principal contenedor">
-      <h2 class="text-center">Nombre Pagina</h2>
-    </main>
-
-      <footer class="site-footer">
-        <div class="grid-footer contenedor">
-        <div>
-          <h3 class="categorias-menu">Categorias</h3>
-          <nav class="footer-menu">
-            <a href="#">Cocina</a>
-            <a href="#">Oficina</a>
-            <a href="#">Jardin</a>
-            <a href="#">Cochera</a>
-            <a href="#">Dormitorios</a>
-          </nav>
-        </div>
-        <div>
-          <h3 class="categorias-menu">Sobre Nosotros</h3>
-          <nav class="footer-menu">
-            <a href="#">Nuestra Historia</a>
-            <a href="#">Mision, Vision y Valores</a>
-            <a href="#">Carrera</a>
-            <a href="#">Politica de Privacidad</a>
-            <a href="#">Terminos del servicio</a>
-          </nav>
-        </div>
-        <div>
-          <h3 class="categorias-menu">Soporte</h3>
-          <nav class="footer-menu">
-            <a href="#">Preguntas Frecuentes</a>
-            <a href="#">Ayuda en Linea</a>
-            <a href="#">Confianza y Seguridad</a>
-          </nav>
-        </div>
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <button id="openCartBtn" class="header-icon-btn" aria-label="Abrir Carrito">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge">0</span>
+        </button>
       </div>
-        <p class="copyright">Todos los derechos reservados, 2022 TiendaMuebles &copy;</p>
-      </footer>
-    </body>
-  </html>
+    </div>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="page-header-banner">
+    <div class="contenedor">
+      <h2 class="page-header-title">Título de la Página</h2>
+    </div>
+  </section>
+
+  <!-- Main Content Container -->
+  <main class="contenedor" style="padding: 6.4rem 0;">
+    <p>Contenido base de la plantilla.</p>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="contenedor footer-bottom">
+      <p class="copyright">
+        Todos los derechos reservados &copy; 2026 TiendaMuebles &bull; Modernizado por <strong>Jose Manuel Perdomo</strong>
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js?v=3.0.0"></script>
+</body>
+</html>
